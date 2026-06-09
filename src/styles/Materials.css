@@ -1,0 +1,147 @@
+.catalog-page{
+  background:#f7f2ea;
+}
+
+.catalog-hero{
+  padding:140px 8% 100px;
+  text-align:center;
+}
+
+.catalog-hero span{
+  color:#c9934e;
+  letter-spacing:3px;
+  font-size:14px;
+}
+
+.catalog-hero h1{
+  font-size:4rem;
+  color:#2d140c;
+  margin:20px 0;
+  font-family:"Playfair Display",serif;
+}
+
+.catalog-hero p{
+  color:#6d5a4d;
+  max-width:700px;
+  margin:auto;
+  line-height:1.9;
+}
+
+.catalog-showcase{
+  padding:0 8% 120px;
+  display:flex;
+  flex-direction:column;
+  gap:80px;
+}
+
+.catalog-item{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.catalog-reverse .catalog-image{
+  order:2;
+}
+
+.catalog-reverse .catalog-content{
+  order:1;
+}
+
+.catalog-image{
+  position:relative;
+  overflow:hidden;
+  border-radius:30px;
+}
+
+.catalog-image img{
+  width:100%;
+  height:500px;
+  object-fit:cover;
+  display:block;
+}
+
+.catalog-number{
+  position:absolute;
+  top:25px;
+  left:25px;
+  width:70px;
+  height:70px;
+  background:white;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.4rem;
+  font-weight:700;
+  color:#2d140c;
+}
+
+.catalog-content span{
+  color:#c9934e;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-size:13px;
+}
+
+.catalog-content h2{
+  margin:15px 0 20px;
+  font-size:2.7rem;
+  color:#2d140c;
+  font-family:"Playfair Display",serif;
+}
+
+.catalog-content p{
+  color:#6d5a4d;
+  line-height:1.9;
+  margin-bottom:30px;
+}
+
+.catalog-btn{
+  display:inline-block;
+  padding:15px 35px;
+  background:#2d140c;
+  color:white;
+  text-decoration:none;
+  border-radius:50px;
+  transition:.3s;
+}
+
+.catalog-btn:hover{
+  background:#c9934e;
+  transform:translateY(-3px);
+}
+
+.catalog-size{
+  position:absolute;
+  bottom:25px;
+  right:25px;
+  background:#2d140c;
+  color:white;
+  padding:10px 16px;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:1px;
+}
+
+@media(max-width:900px){
+
+  .catalog-item{
+    grid-template-columns:1fr;
+  }
+
+  .catalog-reverse .catalog-image,
+  .catalog-reverse .catalog-content{
+    order:unset;
+  }
+
+  .catalog-image img{
+    height:320px;
+  }
+
+  .catalog-hero h1{
+    font-size:2.5rem;
+  }
+}

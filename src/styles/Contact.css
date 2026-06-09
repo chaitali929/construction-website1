@@ -1,0 +1,264 @@
+.contactpg-page{
+  background:#f8f2e8;
+}
+
+.contactpg-hero{
+  text-align:center;
+  padding:120px 8% 80px;
+}
+
+.contactpg-hero span{
+  color:#c9934e;
+  letter-spacing:2px;
+  font-size:14px;
+}
+
+.contactpg-hero h1{
+  font-size:3.8rem;
+  color:#2d140c;
+  margin:20px 0;
+  font-family:"Playfair Display",serif;
+}
+
+.contactpg-hero p{
+  max-width:700px;
+  margin:auto;
+  color:#6d5a4d;
+  line-height:1.9;
+}
+
+.contactpg-section{
+  padding:40px 8% 100px;
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:40px;
+}
+
+.contactpg-left{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.contactpg-card{
+  background:white;
+  padding:30px;
+  border-radius:24px;
+  box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.contactpg-card h3{
+  color:#2d140c;
+  margin-bottom:15px;
+}
+
+.contactpg-card p{
+  color:#6d5a4d;
+  line-height:1.8;
+}
+
+.contactpg-right{
+  background:white;
+  padding:40px;
+  border-radius:30px;
+  box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.contactpg-right h2{
+  color:#2d140c;
+  margin-bottom:25px;
+  font-family:"Playfair Display",serif;
+}
+
+.contactpg-right form{
+  max-width:100%;
+}
+
+/* FORM */
+
+.contactpg-right form{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.contactpg-right input,
+.contactpg-right textarea{
+  width:100%;
+  padding:16px 18px;
+  border:1px solid #e5d7c7;
+  border-radius:14px;
+  background:#faf8f4;
+  font-size:15px;
+  outline:none;
+  transition:.3s;
+}
+
+.contactpg-right input:focus,
+.contactpg-right textarea:focus{
+  border-color:#c9934e;
+  box-shadow:0 0 0 4px rgba(201,147,78,.15);
+}
+
+.contactpg-right textarea{
+  min-height:180px;
+  resize:none;
+}
+
+.contactpg-right button{
+  margin-top:10px;
+  background:#2d140c;
+  color:white;
+  border:none;
+  padding:18px;
+  border-radius:14px;
+  cursor:pointer;
+  font-size:15px;
+  font-weight:600;
+  transition:.3s;
+}
+
+.contactpg-right button:hover{
+  background:#c9934e;
+  transform:translateY(-3px);
+}
+
+/* MAP SECTION */
+
+.contactpg-map-section{
+  padding:0 8% 100px;
+}
+
+.contactpg-map-section h2{
+  text-align:center;
+  font-size:2.8rem;
+  color:#2d140c;
+  margin-bottom:40px;
+  font-family:"Playfair Display",serif;
+}
+
+.contactpg-map-section iframe{
+  width:100%;
+  height:500px;
+  border:none;
+  border-radius:30px;
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+/* FAQ */
+
+.contactpg-faq-section{
+  padding:100px 8%;
+  background:#2d140c;
+  text-align:center;
+}
+
+.contactpg-faq-section span{
+  color:#c9934e;
+  letter-spacing:2px;
+  font-size:14px;
+}
+
+.contactpg-faq-section h2{
+  color:white;
+  font-size:3rem;
+  margin-top:15px;
+  margin-bottom:50px;
+  font-family:"Playfair Display",serif;
+}
+
+.contactpg-faq-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.contactpg-faq-card{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.08);
+  padding:35px;
+  border-radius:24px;
+  transition:.3s;
+}
+
+.contactpg-faq-card:hover{
+  transform:translateY(-6px);
+}
+
+.contactpg-faq-card h3{
+  color:white;
+  margin-bottom:15px;
+  font-size:1.1rem;
+}
+
+.contactpg-faq-card p{
+  color:rgba(255,255,255,.75);
+  line-height:1.8;
+}
+
+/* HOVER EFFECTS */
+
+.contactpg-card{
+  transition:.3s;
+}
+
+.contactpg-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+  .contactpg-section{
+    grid-template-columns:1fr;
+  }
+
+  .contactpg-faq-grid{
+    grid-template-columns:1fr;
+  }
+
+  .contactpg-map-section iframe{
+    height:400px;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .contactpg-hero{
+    padding:90px 6% 60px;
+  }
+
+  .contactpg-hero h1{
+    font-size:2.5rem;
+  }
+
+  .contactpg-section{
+    padding:30px 6% 70px;
+  }
+
+  .contactpg-right,
+  .contactpg-card{
+    padding:25px;
+  }
+
+  .contactpg-map-section{
+    padding:0 6% 70px;
+  }
+
+  .contactpg-map-section h2,
+  .contactpg-faq-section h2{
+    font-size:2rem;
+  }
+
+  .contactpg-map-section iframe{
+    height:300px;
+  }
+
+  .contactpg-faq-section{
+    padding:70px 6%;
+  }
+
+}

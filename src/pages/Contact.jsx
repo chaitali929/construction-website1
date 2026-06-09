@@ -1,0 +1,184 @@
+import "../styles/Contact.css";
+
+function Contact() {
+  return (
+    <div className="contactpg-page">
+
+      {/* HERO */}
+
+      <section className="contactpg-hero">
+
+        <span>GET IN TOUCH</span>
+
+        <h1>
+          Let's Build Something
+          Great Together
+        </h1>
+
+        <p>
+          Whether you're planning a home, commercial
+          project, renovation or large-scale development,
+          we're here to supply the materials you need.
+        </p>
+
+      </section>
+
+      {/* CONTACT SECTION */}
+
+      <section className="contactpg-section">
+
+        <div className="contactpg-left">
+
+          <div className="contactpg-card">
+
+            <h3>📍 Address</h3>
+
+            <p>
+              Suchak Naka Bus Stop,
+              Kalyan–Shilphata Road,
+              Nandivali Gaon,
+              Kalyan, Maharashtra 421306
+            </p>
+
+          </div>
+
+          <div className="contactpg-card">
+
+            <h3>📞 Phone</h3>
+
+            <p>Shadab: 7977113236</p>
+            <p>Sarfraz: 8108729945 </p>
+            <p>Shahnawaz: 7021416059</p>
+
+          </div>
+
+          <div className="contactpg-card">
+
+            <h3>✉️ Email</h3>
+
+            <p>shadab.choudhari@gmail.com</p>
+
+          </div>
+
+          <div className="contactpg-card">
+
+            <h3>🕒 Working Hours</h3>
+
+            <p>Monday - Saturday : 9:00 AM - 7:00 PM</p>
+
+            <p>Sunday : Open</p>
+
+            <p>Friday : Closed</p>
+
+          </div>
+
+        </div>
+
+        <div className="contactpg-right">
+
+          <h2>Request A Quote</h2>
+
+          <form>
+
+            <input
+              type="text"
+              placeholder="Your Name"
+            />
+
+            <input
+              type="email"
+              placeholder="Email Address"
+            />
+
+            <input
+              type="text"
+              placeholder="Phone Number"
+            />
+
+            <input
+              type="text"
+              placeholder="Material Required"
+            />
+
+            <textarea
+              placeholder="Tell us about your project..."
+            ></textarea>
+
+            <button type="submit">
+              Send Inquiry
+            </button>
+
+          </form>
+
+        </div>
+
+      </section>
+
+      {/* MAP */}
+
+      <section className="contactpg-map-section">
+
+        <h2>Find Us On Map</h2>
+
+        <iframe
+          title="Abdul Hamid Timber Mart"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.3289359896085!2d73.11840107715689!3d19.224491000934723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be795c7f7602bc7%3A0xdc2c88214b2016ba!2sABDUL%20HAMID%20TIMBER%20MART!5e0!3m2!1sen!2sin!4v1780950009168!5m2!1sen!2sin"
+          loading="lazy"
+        ></iframe>
+
+      </section>
+
+      {/* FAQ */}
+
+      <section className="contactpg-faq-section">
+
+        <span>FAQ</span>
+
+        <h2>
+          Frequently Asked Questions
+        </h2>
+
+        <div className="contactpg-faq-grid">
+
+          <div className="contactpg-faq-card">
+            <h3>
+              Do you supply bulk orders?
+            </h3>
+
+            <p>
+              Yes, we cater to builders,
+              contractors and large projects.
+            </p>
+          </div>
+
+          <div className="contactpg-faq-card">
+            <h3>
+              Do you provide delivery?
+            </h3>
+
+            <p>
+              Yes, delivery options are available
+              depending on location and order size.
+            </p>
+          </div>
+
+          <div className="contactpg-faq-card">
+            <h3>
+              What materials do you supply?
+            </h3>
+
+            <p>
+              Timber, plywood, bamboo,
+              GI sheets and construction materials.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+  );
+}
+
+export default Contact;
