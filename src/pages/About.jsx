@@ -1,6 +1,6 @@
 import "../styles/About.css";
 import { Link } from "react-router-dom";
-import constructionImg from "../assets/Construction.webp";
+import constructionImg from "../assets/Impose.png";
 
 function About() {
   return (
@@ -26,10 +26,7 @@ function About() {
         </h1>
 
         <p>
-          For over four decades, Abdul Hamid Timber Mart
-          has supplied premium timber, plywood, bamboo,
-          GI sheets and construction materials to builders,
-          contractors and homeowners across Maharashtra.
+          Abdul Hamid Timber Mart was established in 1985 by our founder, Abdul Hamid. For over four decades, our commitment to quality has been passed down through the generations—first to his son, Wajid Ali, and now to the third generation: Sarfraz, Shahnawaz, and Shadab.
         </p>
 
       </section>
@@ -196,11 +193,10 @@ function About() {
 
     <div className="trust-card">
 
-      <h3>Fair Pricing</h3>
+      <h3>Full Transparency</h3>
 
       <p>
-        Transparent and competitive pricing for
-        retail and bulk purchases.
+        We believe in honest business. Our printed bills clearly detail rates, CFT, and RFT measurements so our customers always have a clear understanding of their purchase..
       </p>
 
     </div>

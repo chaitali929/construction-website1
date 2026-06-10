@@ -19,27 +19,23 @@ function Home() {
   const materials = [
   {
     title: "Bamboo",
-    category: "PLYWOOD",
     image: imageMap["Bamboo"],
   },
   {
-    title: "GI sheet",
-    category: "PLYWOOD",
+    title: "G.I sheet",
     image: imageMap["GI sheet"],
   },
   {
     title: "Munda",
-    category: "TIMBER",
     image: imageMap["Munda"],
   },
   {
     title: "Silverwood",
-    category: "TIMBER",
     image: imageMap["Silverwood"],
   },
   {
     title: "Plywood",
-    category: "NATURAL",
+  
     image: imageMap["Plywood"],
   },
 ];
@@ -65,7 +61,7 @@ function Home() {
 
         <p>
           Abdul Hamid Timber Mart has been supplying premium timber,
-          plywood, bamboo, GI sheets and construction materials
+          plywood, bamboo, Silverwood, G.I sheets and construction materials
           to builders, contractors and homeowners for over
           four decades.
         </p>
@@ -83,21 +79,21 @@ function Home() {
       "Saru Munda",
       "Bamboo",
       "Shuttering PF Grade",
-      "GI Sheet",
+      "G.I Sheet",
       "✓ Plywood",
 
       "✓ Silver Wood",
       "Saru Munda",
       "Bamboo",
       "Shuttering PF Grade",
-      "GI Sheet",
+      "G.I Sheet",
       "✓ Plywood",
 
       "✓ Silver Wood",
       "Saru Munda",
       "Bamboo",
       "Shuttering PF Grade",
-      "GI Sheet",
+      "G.I Sheet",
       "✓ Plywood",
     ].map((item, index) => (
       <div className="slide-item" key={index}>

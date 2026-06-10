@@ -17,9 +17,11 @@ function Navbar() {
         <Link to="/contact">Contact</Link>
       </div>
 
-      <button className="call-btn">
-        📞 Call Now
-      </button>
+      <a href="tel:+919892690119">
+  <button className="call-btn">
+    Call Now
+  </button>
+</a>
     </nav>
   );
 }
