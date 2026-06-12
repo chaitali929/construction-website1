@@ -1,5 +1,5 @@
 import "../styles/Home.css";
-
+import { Helmet } from "react-helmet-async";
 import Bamboo from "../assets/Bamboo1.png";
 import Gisheet from "../assets/Gi sheets1.png";
 import Munda from "../assets/Munda1.png";
@@ -41,6 +41,16 @@ function Home() {
 ];
 
   return (
+
+    <>
+    <Helmet>
+  <title>Abdul Hamid Timber Mart | Timber, Plywood & Construction Materials</title>
+  <meta
+    name="description"
+    content="Trusted supplier of timber, plywood, bamboo and construction materials since 1984. Quality products and reliable service."
+  />
+</Helmet>
+  
     <div className="home">
 
       {/* HERO */}
@@ -557,7 +567,7 @@ Nandivali Gaon, Kalyan, Maharashtra 421306</p>
 
     </div>
 
-    
+      </>
   );
 }
 

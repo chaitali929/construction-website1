@@ -1,9 +1,22 @@
 import "../styles/About.css";
 import { Link } from "react-router-dom";
 import constructionImg from "../assets/Impose.png";
+import { Helmet } from "react-helmet-async";
+
+
 
 function About() {
   return (
+
+        <>
+      <Helmet>
+        <title>About Us | Abdul Hamid Timber Mart</title>
+
+        <meta
+          name="description"
+          content="Learn about Abdul Hamid Timber Mart, serving the construction industry since 1984 with quality timber, plywood, bamboo and construction materials."
+        />
+      </Helmet>
     <div className="about-page">
 
       {/* HERO */}
@@ -255,6 +268,7 @@ function About() {
 </section>
 
     </div>
+    </>
   );
 }
 

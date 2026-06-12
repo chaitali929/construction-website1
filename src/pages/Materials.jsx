@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect, useCallback } from "react";
 import "../styles/Materials.css";
-
-// images from assets (same names you mentioned)
+import { Helmet } from "react-helmet-async";
 import Bamboo from "../assets/Bamboo1.png";
 import Gisheet from "../assets/Gi sheets1.png";
 import Munda from "../assets/Munda1.png";
@@ -94,6 +93,14 @@ function Materials() {
   const activeProd = lightbox ? products[lightbox.productIndex] : null;
 
   return (
+    <>
+    <Helmet>
+  <title>Our Materials | Abdul Hamid Timber Mart</title>
+  <meta
+    name="description"
+    content="Explore our range of timber, plywood, bamboo and construction materials for residential, commercial and infrastructure projects."
+  />
+</Helmet>
     <div className="catalog-page">
 
       {/* HERO */}
@@ -204,6 +211,7 @@ function Materials() {
       
 
     </div>
+    </>
   );
 }
 

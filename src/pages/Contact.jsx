@@ -1,6 +1,7 @@
 import "../styles/Contact.css";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Helmet } from "react-helmet-async";
 
 function Contact() {
 
@@ -27,6 +28,14 @@ const sendEmail = (e) => {
     });
 };
   return (
+    <>
+    <Helmet>
+  <title>Contact Us | Abdul Hamid Timber Mart</title>
+  <meta
+    name="description"
+    content="Contact Abdul Hamid Timber Mart for timber, plywood and construction material requirements. Get in touch with our team today."
+  />
+</Helmet>
     <div className="contactpg-page">
 
       {/* HERO */}
@@ -213,6 +222,7 @@ const sendEmail = (e) => {
       </section>
 
     </div>
+    </>
   );
 }
 
