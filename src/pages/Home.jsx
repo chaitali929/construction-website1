@@ -49,6 +49,28 @@ function Home() {
     name="description"
     content="Trusted supplier of timber, plywood, bamboo and construction materials since 1984. Quality products and reliable service."
   />
+
+   <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "Abdul Hamid Timber Mart",
+      image:
+        "https://abdulhamidtimbermart.in/abdul-hamid-timbermart-logo.png",
+      url: "https://abdulhamidtimbermart.in",
+      telephone: "+917977113236",
+      email: "shadab.choudhari@gmail.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress:
+          "Suchak Naka Bus Stop, Kalyan–Shilphata Road, Nandivali Gaon",
+        addressLocality: "Kalyan",
+        addressRegion: "Maharashtra",
+        postalCode: "421306",
+        addressCountry: "IN"
+      }
+    })}
+  </script>
 </Helmet>
   
     <div className="home">
