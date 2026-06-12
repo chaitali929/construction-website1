@@ -262,3 +262,13 @@
   }
 
 }
+
+@media(max-width:458px){
+.contactpg-page{
+  width:455px;
+
+}
+.contactpg-faq-section{
+  margin-bottom: -99px;
+}
+}

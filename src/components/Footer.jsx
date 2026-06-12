@@ -61,9 +61,9 @@ function Footer() {
           <p>📍 Suchak Naka Bus Stop, Kalyan–Shilphata Road,
 Nandivali Gaon, Kalyan, Maharashtra 421306</p>
 
-           <p>📞Telephone: 0251-235-3116</p>
-<p>Sarfraz: 8108729945 / 7977848196 </p>
-<p>Shahnawaz: 7021416059</p>
+             <p>📞Shadab: 7977113236</p>
+            <p>Sarfraz: 8108729945 </p>
+            <p>Shahnawaz: 7021416059</p>
  <p>🕒 Mon - Sun : 9 AM - 7 PM
           Friday - closed </p>
 

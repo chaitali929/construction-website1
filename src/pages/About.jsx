@@ -25,9 +25,7 @@ function About() {
           Of Construction Dreams.
         </h1>
 
-        <p>
-          Abdul Hamid Timber Mart was established in 1985 by our founder, Abdul Hamid. For over four decades, our commitment to quality has been passed down through the generations—first to his son, Wajid Ali, and now to the third generation: Sarfraz, Shahnawaz, and Shadab.
-        </p>
+       
 
       </section>
 

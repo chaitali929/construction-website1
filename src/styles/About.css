@@ -407,4 +407,11 @@
     font-size:3rem;
   }
 
+
 }
+
+@media(max-width:458px){
+  .about-page{
+    width:455px;
+  }
+  }

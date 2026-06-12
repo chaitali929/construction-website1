@@ -718,4 +718,27 @@ body {
     grid-template-columns:1fr;
   }
 
+  .why-section{
+        width: 455px;
+  }
+
+  .hero {
+        width: 456px;
+  }
+
+  .intro-section {
+            width: 455px;
+  }
+  .materials-section{
+        width: 459px;
+  }
+  .partners-section{
+    width:455px;
+  }
+  .testimonial-section{
+    width:455px;
+  }
+  .contact-section{
+    width:455px;
+  }
 }

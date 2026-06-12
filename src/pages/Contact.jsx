@@ -1,6 +1,31 @@
 import "../styles/Contact.css";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+
+
+  const form = useRef();
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_f7fzrkk",
+      "template_kawiumo",
+      form.current,
+      "wiCEwwPKtSFD-tav9"
+    )
+    .then(() => {
+      alert("Inquiry sent successfully!");
+      e.target.reset();
+    })
+    .catch((error) => {
+      console.log(error);
+      alert("Failed to send inquiry.");
+    });
+};
   return (
     <div className="contactpg-page">
 
@@ -78,37 +103,47 @@ function Contact() {
 
           <h2>Request A Quote</h2>
 
-          <form>
+         <form ref={form} onSubmit={sendEmail}>
 
-            <input
-              type="text"
-              placeholder="Your Name"
-            />
+  <input
+    type="text"
+    name="user_name"
+    placeholder="Your Name"
+    required
+  />
 
-            <input
-              type="email"
-              placeholder="Email Address"
-            />
+  <input
+    type="email"
+    name="user_email"
+    placeholder="Email Address"
+    required
+  />
 
-            <input
-              type="text"
-              placeholder="Phone Number"
-            />
+  <input
+    type="text"
+    name="user_phone"
+    placeholder="Phone Number"
+    required
+  />
 
-            <input
-              type="text"
-              placeholder="Material Required"
-            />
+  <input
+    type="text"
+    name="material_required"
+    placeholder="Material Required"
+    required
+  />
 
-            <textarea
-              placeholder="Tell us about your project..."
-            ></textarea>
+  <textarea
+    name="project_details"
+    placeholder="Tell us about your project..."
+    required
+  ></textarea>
 
-            <button type="submit">
-              Send Inquiry
-            </button>
+  <button type="submit">
+    Send Inquiry
+  </button>
 
-          </form>
+</form>
 
         </div>
 

@@ -3,9 +3,9 @@ import { useState, useEffect, useCallback } from "react";
 import "../styles/Materials.css";
 
 // images from assets (same names you mentioned)
-import Bamboo from "../assets/Bamboo.png";
-import Gisheet from "../assets/Gi sheets.png";
-import Munda from "../assets/Munda.png";
+import Bamboo from "../assets/Bamboo1.png";
+import Gisheet from "../assets/Gi sheets1.png";
+import Munda from "../assets/Munda1.png";
 import Silverwood from "../assets/Silverwood_material.png";
 import Plywood from "../assets/Plywood_pf_mf.png";
 

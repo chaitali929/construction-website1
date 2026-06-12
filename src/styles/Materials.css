@@ -348,3 +348,9 @@
     font-size:2.5rem;
   }
 }
+
+@media(max-width:458px){
+  .catalog-page{
+    width:455px;
+  }
+}

@@ -1,10 +1,10 @@
 import "../styles/Home.css";
 
-import Bamboo from "../assets/Bamboo.png";
-import Gisheet from "../assets/Gi sheets.png";
-import Munda from "../assets/Munda.png";
-import Silverwood from "../assets/Silverwood.png";
-import Plywood from "../assets/Plywood.png";
+import Bamboo from "../assets/Bamboo1.png";
+import Gisheet from "../assets/Gi sheets1.png";
+import Munda from "../assets/Munda1.png";
+import Silverwood from "../assets/Silverwood1.png";
+import Plywood from "../assets/Plywood1.png";
 
 function Home() {
 
