@@ -580,7 +580,7 @@ Nandivali Gaon, Kalyan, Maharashtra 421306</p>
 
   <form ref={form} onSubmit={sendEmail}>
 
-      <h3>Request A Quote</h3>
+      
 
    <input
   type="text"
