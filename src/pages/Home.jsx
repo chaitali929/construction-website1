@@ -5,9 +5,32 @@ import Gisheet from "../assets/Gi sheets1.png";
 import Munda from "../assets/Munda1.png";
 import Silverwood from "../assets/Silverwood1.png";
 import Plywood from "../assets/Plywood1.png";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Home() {
 
+  const form = useRef();
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_f7fzrkk",
+      "template_kawiumo",
+      form.current,
+      "wiCEwwPKtSFD-tav9"
+    )
+    .then(() => {
+      alert("Inquiry sent successfully!");
+      e.target.reset();
+    })
+    .catch((error) => {
+      console.log(error);
+      alert("Failed to send inquiry.");
+    });
+};
 
   const imageMap = {
   Bamboo,
@@ -553,19 +576,44 @@ Nandivali Gaon, Kalyan, Maharashtra 421306</p>
 
     <div className="contact-right">
 
+  <h3>Request A Quote</h3>
+
+  <form ref={form} onSubmit={sendEmail}>
+
       <h3>Request A Quote</h3>
 
-      <input type="text" placeholder="Your Name" />
+   <input
+  type="text"
+  name="user_name"
+  placeholder="Your Name"
+  required
+/>
 
-      <input type="email" placeholder="Email Address" />
+<input
+  type="email"
+  name="user_email"
+  placeholder="Email Address"
+  required
+/>
 
-      <input type="text" placeholder="Phone Number" />
+<input
+  type="text"
+  name="user_phone"
+  placeholder="Phone Number"
+  required
+/>
 
-      <textarea placeholder="Tell us about your project"></textarea>
+<textarea
+  name="project_details"
+  placeholder="Tell us about your project"
+  required
+></textarea>
 
-      <button>
-        Send Inquiry
-      </button>
+<button type="submit">
+  Send Inquiry
+</button>
+
+     </form>
 
     </div>
 
