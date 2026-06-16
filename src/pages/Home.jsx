@@ -17,10 +17,10 @@ const sendEmail = (e) => {
 
   emailjs
     .sendForm(
-      "service_f7fzrkk",
-      "template_kawiumo",
+      "service_p7rw8j6",
+      "template_r4r4qqs",
       form.current,
-      "wiCEwwPKtSFD-tav9"
+      "UB5C7zuVETtHTSFVe"
     )
     .then(() => {
       alert("Inquiry sent successfully!");
