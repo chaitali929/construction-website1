@@ -7,6 +7,13 @@ import Silverwood from "../assets/Silverwood1.png";
 import Plywood from "../assets/Plywood1.png";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Link } from "react-router-dom";
+import RunwalLogo from "../assets/Runwal-logo.webp";
+import LodhaLogo from "../assets/lodha-logo.png";
+import HiranandaniLogo from "../assets/Hiranandani-logo.png";
+import RustomjeeLogo from "../assets/Rustomji-logo.png";
+import WadhwaLogo from "../assets/Wadhwa-logo.jpeg";
+import TharwaniLogo from "../assets/Tharwani-Logo.png";
 
 function Home() {
 
@@ -57,7 +64,7 @@ const sendEmail = (e) => {
     image: imageMap["Silverwood"],
   },
   {
-    title: "Plywood",
+    title: "Shuttering plywood PF grade / MR grade",
   
     image: imageMap["Plywood"],
   },
@@ -115,8 +122,8 @@ const sendEmail = (e) => {
         </h1>
 
         <p>
-          Abdul Hamid Timber Mart has been supplying premium timber,
-          plywood, bamboo, Silverwood, G.I sheets and construction materials
+          Abdul Hamid Timber Mart has been supplying Premium Timber,
+         Shuttering plywood PF grade / MR grade, Bamboo, Silverwood, G.I sheets and construction materials
           to builders, contractors and homeowners for over
           four decades.
         </p>
@@ -131,24 +138,24 @@ const sendEmail = (e) => {
 
     {[
       "✓ Silver Wood",
-      "Saru Munda",
-      "Bamboo",
-      "Shuttering PF Grade",
-      "G.I Sheet",
+      "✓ Saru Munda",
+      "✓ Bamboo",
+      "✓ Shuttering PF Grade",
+      "✓ G.I Sheet",
       "✓ Plywood",
 
       "✓ Silver Wood",
-      "Saru Munda",
-      "Bamboo",
-      "Shuttering PF Grade",
-      "G.I Sheet",
+      "✓ Saru Munda",
+      "✓ Bamboo",
+      "✓ shuttering PF Grade",
+      "✓ G.I Sheet",
       "✓ Plywood",
 
       "✓ Silver Wood",
-      "Saru Munda",
-      "Bamboo",
-      "Shuttering PF Grade",
-      "G.I Sheet",
+      "✓ Saru Munda",
+      "✓ Bamboo",
+      "✓ Shuttering PF Grade",
+      "✓ G.I Sheet",
       "✓ Plywood",
     ].map((item, index) => (
       <div className="slide-item" key={index}>
@@ -161,9 +168,11 @@ const sendEmail = (e) => {
 </div>
         <div className="hero-buttons">
 
-          <button className="secondary-btn">
-            Explore Materials
-          </button>
+         <Link to="/materials">
+  <button className="secondary-btn">
+    Explore Materials
+  </button>
+</Link>
 
         </div>
 
@@ -198,7 +207,7 @@ const sendEmail = (e) => {
           </p>
 
           <p>
-            From premium plywood and timber to bamboo and GI sheets,
+            From Premium Shuttering plywood PF grade / MR grade and Timber to Bamboo and GI sheets,
             we provide products that meet professional construction
             standards.
           </p>
@@ -333,7 +342,7 @@ const sendEmail = (e) => {
   </h2>
 
   <p className="partners-subtitle">
-    We proudly supply timber, plywood and construction
+    We proudly supply Timber, Shuttering plywood PF grade / MR grade and construction
     materials to leading builders, contractors and
     infrastructure companies across Maharashtra.
   </p>
@@ -366,21 +375,61 @@ const sendEmail = (e) => {
 
     <div className="partners-track">
 
-      <div className="partner-pill">Runwal Group</div>
-      <div className="partner-pill">Lodha</div>
-      <div className="partner-pill">Hiranandani</div>
-      <div className="partner-pill">Rustomjee</div>
-      <div className="partner-pill">The Wadhwa Group</div>
-      <div className="partner-pill">Tharwani Infrastructure</div>
+      <div className="partner-pill">
+  <img src={RunwalLogo} alt="Runwal Group" />
+  <span>Runwal Group</span>
+</div>
+      <div className="partner-pill">
+  <img src={LodhaLogo} alt="Lodha" />
+  <span>Lodha</span>
+</div>
+      <div className="partner-pill">
+  <img src={HiranandaniLogo} alt="Hiranandani" />
+  <span>Hiranandani</span>
+</div>
+
+     <div className="partner-pill">
+  <img src={RustomjeeLogo} alt="Rustomjee" />
+  <span>Rustomjee</span>
+</div>
+     <div className="partner-pill">
+  <img src={WadhwaLogo} alt="The Wadhwa Group" />
+  <span>The Wadhwa Group</span>
+</div>
+     <div className="partner-pill">
+  <img src={TharwaniLogo} alt="Tharwani Infrastructure" />
+  <span>Tharwani Infrastructure</span>
+</div>
 
       {/* Duplicate */}
 
-      <div className="partner-pill">Runwal Group</div>
-      <div className="partner-pill">Lodha</div>
-      <div className="partner-pill">Hiranandani</div>
-      <div className="partner-pill">Rustomjee</div>
-      <div className="partner-pill">The Wadhwa Group</div>
-      <div className="partner-pill">Tharwani Infrastructure</div>
+     
+      <div className="partner-pill">
+  <img src={RunwalLogo} alt="Runwal Group" />
+  <span>Runwal Group</span>
+</div>
+      <div className="partner-pill">
+  <img src={LodhaLogo} alt="Lodha" />
+  <span>Lodha</span>
+</div>
+      <div className="partner-pill">
+  <img src={HiranandaniLogo} alt="Hiranandani" />
+  <span>Hiranandani</span>
+</div>
+
+     <div className="partner-pill">
+  <img src={RustomjeeLogo} alt="Rustomjee" />
+  <span>Rustomjee</span>
+</div>
+     <div className="partner-pill">
+  <img src={WadhwaLogo} alt="The Wadhwa Group" />
+  <span>The Wadhwa Group</span>
+</div>
+     <div className="partner-pill">
+  <img src={TharwaniLogo} alt="Tharwani Infrastructure" />
+  <span>Tharwani Infrastructure</span>
+</div>
+
 
     </div>
 
@@ -390,17 +439,17 @@ const sendEmail = (e) => {
 
 <section className="testimonial-section">
 
-  <span>CLIENT TESTIMONIALS</span>
+<span>CLIENT TESTIMONIALS</span>
 
-  <h2>
-    Trusted By Builders,
-    Contractors & Developers
-  </h2>
+<h2>
+  Real Feedback
+  From Our Clients
+</h2>
 
-  <p className="testimonial-subtitle">
-    For over four decades we have supplied quality
-    materials to hundreds of successful projects.
-  </p>
+<p className="testimonial-subtitle">
+  Our commitment to quality materials and timely delivery
+  has earned the trust of customers across the region.
+</p>
 
   <div className="testimonial-slider">
 
@@ -565,9 +614,9 @@ Nandivali Gaon, Kalyan, Maharashtra 421306</p>
 <div className="contact-card">
   <h4>🕒 Working Hours</h4>
 
-  <p>Monday - Sunday : 9:00 AM - 7:00 PM</p>
+  <p>Monday - Sunday:9:00 AM-7:00 PM</p>
 
-  <p>Friday : Closed</p>
+
 </div>
       
 

@@ -7,11 +7,13 @@ import Gisheet from "../assets/Gi sheets1.png";
 import Munda from "../assets/Munda1.png";
 import Silverwood from "../assets/Silverwood_material.png";
 import Plywood from "../assets/Plywood_pf_mf.png";
-
+import { useLocation } from "react-router-dom";
 
 function Materials() {
+  const location = useLocation();
   const products = [
     {
+       id: "bamboo",
       name: "Bamboo",
       size: "2ft – 24ft",
       image: Bamboo,
@@ -19,6 +21,7 @@ function Materials() {
       desc: "Strong, flexible and eco-friendly bamboo used in scaffolding and construction support. Widely preferred for temporary structures due to durability and cost efficiency."
     },
     {
+      id: "gi-sheet",
       name: "G.I Sheet",
       size: "8ft – 12ft",
       image: Gisheet,
@@ -26,6 +29,7 @@ function Materials() {
       desc: "Galvanized iron sheets used in roofing and cladding. Highly resistant to rust, weather conditions and long-term exposure."
     },
     {
+      id: "munda",
       name: "Munda (Casuarina pole)",
       size: "8ft – 20ft",
       image: Munda,
@@ -33,6 +37,7 @@ function Materials() {
       desc: "Heavy-duty wooden poles used for shuttering and construction support. Known for strength and load-bearing capacity in site work."
     },
     {
+      id: "silver-wood",
       name: "Silver Wood",
       size: "4×1.5, 6×1.5, 4×3",
       image: Silverwood,
@@ -40,6 +45,7 @@ function Materials() {
       desc: "Premium quality silver wood used in framing and structural work, available in mutiple specifications including 7\"dora, 7.5dora, 8dora and calicut for smooth finish and long lasting durability."
     },
     {
+      id: "shuttering-plywood",
       name: "Shuttering plywood PF grade / MR grade",
       size: "4×1.5, 6×1.5, 4×3",
       image: Plywood,
@@ -90,7 +96,20 @@ function Materials() {
     return () => window.removeEventListener("keydown", handleKey);
   }, [lightbox, closeLightbox, prevSlide, nextSlide]);
 
+
   const activeProd = lightbox ? products[lightbox.productIndex] : null;
+
+  useEffect(() => {
+  if (location.hash) {
+    const element = document.querySelector(location.hash);
+
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  }
+}, [location]);
 
   return (
     <>
@@ -104,19 +123,24 @@ function Materials() {
     <div className="catalog-page">
 
       {/* HERO */}
-      <section className="catalog-hero">
-        <span>OUR INVENTORY</span>
-        <h1>Premium Construction Materials</h1>
-        <p>
-          Trusted supplier of timber, plywood, bamboo, Silverwood, G.I sheets
-          for builders, contractors and homeowners since 1984.
-        </p>
-      </section>
+     <section className="catalog-hero">
+  <span>OUR INVENTORY</span>
+
+  <h1>Quality Materials. Reliable Supply. Trusted Since 1984.</h1>
+
+  <p>
+    Explore our extensive collection of construction and timber materials,
+    including Shuttering plywood PF grade / MR grade, Silver Wood, bamboo,
+    and G.I. sheets. We combine quality products, dependable service,
+    and decades of expertise to support projects of every scale.
+  </p>
+</section>
 
       {/* PRODUCTS */}
       <section className="catalog-showcase">
         {products.map((item, index) => (
           <div
+          id={item.id}
             className={`catalog-item ${index % 2 === 1 ? "catalog-reverse" : ""}`}
             key={index}
           >

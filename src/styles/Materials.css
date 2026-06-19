@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .catalog-page{
   background:#f7f2ea;
 }
@@ -5,13 +9,16 @@
 .catalog-hero{
   padding:140px 8% 100px;
   text-align:center;
+     margin-top: -30px;
 }
 
 
 .catalog-hero span{
   color:#c9934e;
   letter-spacing:3px;
-  font-size:14px;
+      font-size: 37px;
+    font-weight: 500;
+ 
 }
 
 .catalog-hero h1{

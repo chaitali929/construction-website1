@@ -370,15 +370,7 @@ body {
   animation: partnerScroll 30s linear infinite;
 }
 
-.partner-pill {
-  background: white;
-  padding: 22px 40px;
-  border-radius: 100px;
-  color: #2d140c;
-  font-weight: 600;
-  white-space: nowrap;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
-}
+
 
 .partner-pill:hover {
   transform: translateY(-5px);
@@ -388,6 +380,27 @@ body {
   animation-play-state: paused;
 }
 
+
+.partner-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 180px;
+  padding: 20px;
+}
+
+.partner-pill img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.partner-pill span {
+  text-align: center;
+  font-weight: 600;
+}
 @keyframes partnerScroll {
   from {
     transform: translateX(0);

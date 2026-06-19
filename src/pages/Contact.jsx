@@ -98,11 +98,9 @@ const sendEmail = (e) => {
 
             <h3>🕒 Working Hours</h3>
 
-            <p>Monday - Saturday : 9:00 AM - 7:00 PM</p>
+            <p>Monday - Sunday : 9:00 AM - 7:00 PM</p>
 
-            <p>Sunday : Open</p>
-
-            <p>Friday : Closed</p>
+          
 
           </div>
 

@@ -17,7 +17,7 @@ function Footer() {
 />
 
           <p>
-            Premium timber, plywood, bamboo, GI sheets and
+            Premium Timber, Shuttering plywood PF grade / MR grade, Bamboo, GI sheets and
             construction materials supplier serving builders,
             contractors and homeowners since 1984.
           </p>
@@ -42,15 +42,25 @@ function Footer() {
 
           <h3>Materials</h3>
 
-          <a href="#">Shuttering Plywood</a>
+         <Link to="/materials#shuttering-plywood">
+  Shuttering plywood PF grade / MR grade
+</Link>
 
-          <a href="#">Silver Wood</a>
+<Link to="/materials#silver-wood">
+  Silver Wood
+</Link>
 
-          <a href="#">Saru Munda</a>
+<Link to="/materials#munda">
+  Saru Munda
+</Link>
 
-          <a href="#">Bamboo</a>
+<Link to="/materials#bamboo">
+  Bamboo
+</Link>
 
-          <a href="#">GI Sheets</a>
+<Link to="/materials#gi-sheet">
+  GI Sheets
+</Link>
 
         </div>
 
@@ -64,8 +74,7 @@ Nandivali Gaon, Kalyan, Maharashtra 421306</p>
              <p>📞Shadab: 7977113236</p>
             <p>Sarfraz: 8108729945 </p>
             <p>Shahnawaz: 7021416059</p>
- <p>🕒 Mon - Sun : 9 AM - 7 PM
-          Friday - closed </p>
+ <p>🕒 Mon - Sun : 9 AM - 7 PM </p>
 
         </div>
 
