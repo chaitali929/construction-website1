@@ -99,7 +99,7 @@
 @media (max-width: 480px) {
   .navbar {
     padding: 12px 4%;
-     width: 455px;
+  width:100%;
   }
 
   .logo {
@@ -113,7 +113,7 @@
   }
 
   .nav-links {
-    gap: 40px;
+    gap: 26px;
   }
 
   .nav-links a {

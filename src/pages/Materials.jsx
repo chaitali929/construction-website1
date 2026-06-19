@@ -44,14 +44,13 @@ function Materials() {
       gallery: [Silverwood, Silverwood, Silverwood, Silverwood],
       desc: "Premium quality silver wood used in framing and structural work, available in mutiple specifications including 7\"dora, 7.5dora, 8dora and calicut for smooth finish and long lasting durability."
     },
-    {
-      id: "shuttering-plywood",
-      name: "Shuttering plywood PF grade / MR grade",
-      size: "4×1.5, 6×1.5, 4×3",
-      image: Plywood,
-      gallery: [Plywood, Plywood, Plywood, Plywood],
-      desc: "High-quality plywood used in shuttering, interiors and construction. Water-resistant and ideal for heavy-duty usage."
-    }
+ {
+  id: "shuttering-plywood",
+  name: "Shuttering plywood PF grade / MR grade",
+  image: Plywood,
+  gallery: [Plywood, Plywood, Plywood, Plywood],
+  desc: "High-quality plywood used in shuttering, interiors and construction. Water-resistant and ideal for heavy-duty usage."
+}
   ];
 
   // ── Lightbox state ──
@@ -158,7 +157,11 @@ function Materials() {
                 {String(index + 1).padStart(2, "0")}
               </div>
 
-              <div className="catalog-size">{item.size}</div>
+             {item.size && (
+  <div className="catalog-size">
+    {item.size}
+  </div>
+)}
 
               {/* Small hint badge */}
               <div className="catalog-view-more" onClick={() => openLightbox(index)}>

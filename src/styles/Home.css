@@ -678,8 +678,11 @@ body {
 
   .contact-container{
     grid-template-columns:1fr;
+            margin-left: -80px;
   }
-
+.why-left h2{
+      font-size: 3rem;
+}
 }
 
 @media(max-width:768px){
@@ -732,26 +735,31 @@ body {
   }
 
   .why-section{
-        width: 455px;
+   width:100%;
   }
 
   .hero {
-        width: 456px;
+   width:100%;
   }
 
   .intro-section {
-            width: 455px;
+    width:100%;
   }
   .materials-section{
-        width: 459px;
+   width:100%;
   }
   .partners-section{
-    width:455px;
+   width:100%;
   }
   .testimonial-section{
-    width:455px;
+   width:100%;
   }
   .contact-section{
     width:455px;
   }
+  .map-card{
+        margin-left: -15px;
+    margin-right: 82px;
+  }
+ 
 }
