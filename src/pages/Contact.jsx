@@ -36,6 +36,11 @@ const sendEmail = (e) => {
   name="description"
   content="Contact Abdul Hamid Timber Mart, a trusted building material supplier in Kalyan. Get quotations for shuttering plywood, centring materials, silver wood, bamboo, GI sheets and timber for your construction projects."
 />
+
+<link
+  rel="canonical"
+  href="https://abdulhamidtimbermart.in/contact"
+/>
 </Helmet>
     <div className="contactpg-page">
 

@@ -16,6 +16,11 @@ function About() {
   name="description"
   content="Learn about Abdul Hamid Timber Mart, a trusted building material supplier in Kalyan since 1984. We supply shuttering plywood, centring materials, silver wood, bamboo, GI sheets and timber for construction projects."
 />
+
+<link
+  rel="canonical"
+  href="https://abdulhamidtimbermart.in/about"
+/>
       </Helmet>
     <div className="about-page">
 

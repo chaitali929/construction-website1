@@ -121,6 +121,12 @@ function Materials() {
   name="description"
   content="Explore our range of shuttering plywood, centring materials, silver wood, bamboo, GI sheets, timber wood and construction materials. Trusted building material supplier in Kalyan since 1984."
 />
+
+<link
+  rel="canonical"
+  href="https://abdulhamidtimbermart.in/materials"
+/>
+
 </Helmet>
     <div className="catalog-page">
 
