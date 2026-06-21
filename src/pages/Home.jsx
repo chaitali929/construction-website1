@@ -77,8 +77,33 @@ const sendEmail = (e) => {
   <title>Building Materials & Timber Supplier | Kalyan</title>
   <meta
     name="description"
-    content="Quality shuttering plywood, centring materials, bamboo, GI sheets and timber supplied across Kalyan since 1984."
+    content="Building material supplier in Kalyan since 1984. Shuttering plywood, silver wood, bamboo, GI sheets and centring materials."
   />
+
+  <meta
+    property="og:title"
+    content="Abdul Hamid Timber Mart | Premium Timber & Construction Materials"
+  />
+
+  <meta
+    property="og:description"
+    content="Trusted supplier of timber, plywood, bamboo, GI sheets and construction materials since 1984."
+  />
+
+  <meta
+    property="og:image"
+    content="https://abdulhamidtimbermart.in/logo2.png"
+  />
+
+  <meta
+    property="og:url"
+    content="https://abdulhamidtimbermart.in/"
+  />
+
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://abdulhamidtimbermart.in/logo2.png" />
 
      <link
     rel="canonical"
