@@ -74,10 +74,10 @@ const sendEmail = (e) => {
 
     <>
     <Helmet>
-  <title>Abdul Hamid Timber Mart | Timber, Plywood & Construction Materials</title>
+  <title>Building Material Supplier in Kalyan | Abdul Hamid Timber Mart</title>
   <meta
     name="description"
-    content="Trusted supplier of timber, plywood, bamboo and construction materials since 1984. Quality products and reliable service."
+    content="Trusted building material supplier in Kalyan since 1984. We supply shuttering plywood, centring materials, silver wood, bamboo, GI sheets and timber for construction projects."
   />
 
    <script type="application/ld+json">

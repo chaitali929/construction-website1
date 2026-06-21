@@ -113,11 +113,14 @@ function Materials() {
   return (
     <>
     <Helmet>
-  <title>Our Materials | Abdul Hamid Timber Mart</title>
-  <meta
-    name="description"
-    content="Explore our range of timber, plywood, bamboo and construction materials for residential, commercial and infrastructure projects."
-  />
+<title>
+  Shuttering Plywood, Silver Wood, Bamboo & Building Materials in Kalyan
+</title>
+
+<meta
+  name="description"
+  content="Explore our range of shuttering plywood, centring materials, silver wood, bamboo, GI sheets, timber wood and construction materials. Trusted building material supplier in Kalyan since 1984."
+/>
 </Helmet>
     <div className="catalog-page">
 
@@ -125,7 +128,9 @@ function Materials() {
      <section className="catalog-hero">
   <span>OUR INVENTORY</span>
 
-  <h1>Quality Materials. Reliable Supply. Trusted Since 1984.</h1>
+<h1>
+  Quality Building Materials for Residential & Commercial Projects
+</h1>
 
   <p>
     Explore our extensive collection of construction and timber materials,

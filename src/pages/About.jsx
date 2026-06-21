@@ -10,12 +10,12 @@ function About() {
 
         <>
       <Helmet>
-        <title>About Us | Abdul Hamid Timber Mart</title>
+       <title>About Us | Timber, Plywood & Building Material Supplier in Kalyan</title>
 
-        <meta
-          name="description"
-          content="Learn about Abdul Hamid Timber Mart, serving the construction industry since 1984 with quality timber, plywood, bamboo and construction materials."
-        />
+       <meta
+  name="description"
+  content="Learn about Abdul Hamid Timber Mart, a trusted building material supplier in Kalyan since 1984. We supply shuttering plywood, centring materials, silver wood, bamboo, GI sheets and timber for construction projects."
+/>
       </Helmet>
     <div className="about-page">
 

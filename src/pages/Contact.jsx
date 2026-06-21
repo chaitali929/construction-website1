@@ -30,11 +30,12 @@ const sendEmail = (e) => {
   return (
     <>
     <Helmet>
-  <title>Contact Us | Abdul Hamid Timber Mart</title>
-  <meta
-    name="description"
-    content="Contact Abdul Hamid Timber Mart for timber, plywood and construction material requirements. Get in touch with our team today."
-  />
+ <title>Contact Abdul Hamid Timber Mart | Building Material Supplier in Kalyan</title>
+
+<meta
+  name="description"
+  content="Contact Abdul Hamid Timber Mart, a trusted building material supplier in Kalyan. Get quotations for shuttering plywood, centring materials, silver wood, bamboo, GI sheets and timber for your construction projects."
+/>
 </Helmet>
     <div className="contactpg-page">
 
@@ -44,10 +45,9 @@ const sendEmail = (e) => {
 
         <span>GET IN TOUCH</span>
 
-        <h1>
-          Let's Build Something
-          Great Together
-        </h1>
+     <h1>
+  Contact Us for Shuttering Plywood, Timber & Building Materials
+</h1>
 
         <p>
           Whether you're planning a home, commercial
