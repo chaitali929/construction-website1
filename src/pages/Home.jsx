@@ -86,7 +86,7 @@ const sendEmail = (e) => {
       "@type": "LocalBusiness",
       name: "Abdul Hamid Timber Mart",
       image:
-        "https://abdulhamidtimbermart.in/abdul-hamid-timbermart-logo.png",
+        "https://abdulhamidtimbermart.in/logo2.png",
       url: "https://abdulhamidtimbermart.in",
       telephone: "+917977113236",
       email: "shadab.choudhari@gmail.com",
