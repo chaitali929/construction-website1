@@ -92,7 +92,7 @@ const sendEmail = (e) => {
 
   <meta
     property="og:image"
-    content="https://abdulhamidtimbermart.in/logo2.png"
+    content="https://abdulhamidtimbermart.in/favicon-logo.jpeg"
   />
 
   <meta
@@ -103,7 +103,7 @@ const sendEmail = (e) => {
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://abdulhamidtimbermart.in/logo2.png" />
+<meta name="twitter:image" content="https://abdulhamidtimbermart.in/favicon-logo.jpeg" />
 
      <link
     rel="canonical"
@@ -116,7 +116,7 @@ const sendEmail = (e) => {
       "@type": "LocalBusiness",
       name: "Abdul Hamid Timber Mart",
       image:
-        "https://abdulhamidtimbermart.in/logo2.png",
+        "https://abdulhamidtimbermart.in/favicon-logo.jpeg",
       url: "https://abdulhamidtimbermart.in",
       telephone: "+917977113236",
       email: "shadab.choudhari@gmail.com",
